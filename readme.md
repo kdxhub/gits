@@ -21,8 +21,9 @@ apt update && apt upgrade
 
 在Termux中执行下列命令来部署`gits`。<br>
 > ！您不用为此提前安装包括`git`在内的任何前置包体，这是全自动的
+
 ```sh
-sh $(curl https://kdxhub.github.io/gits/deloy/termux.sh)
+bash $(curl https://kdxhub.github.io/gits/deloy/termux.sh)
 ```
 
 ## Linux平台
