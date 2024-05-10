@@ -20,10 +20,10 @@ apt update && apt upgrade
 ```
 
 在Termux中执行下列命令来部署`gits`。<br>
-> ！您不用为此提前安装包括`git`在内的任何前置包体，这是全自动的
+> ! 
 
 ```sh
-bash $(curl https://kdxhub.github.io/gits/deloy/termux.sh)
+bash -c "$(curl https://kdxhub.github.io/gits/deloy/termux.sh)""
 ```
 
 ## Linux平台
@@ -31,13 +31,15 @@ bash $(curl https://kdxhub.github.io/gits/deloy/termux.sh)
 * Git `apt install git`
 * SSH `apt install openssh`
 * Vim `apt install Vim`
+* curl `apt install curl`
 
-您可以使用[Termux脚本（不推荐）](#Android平台)或是执行下列命令。
+您可以使用[Termux脚本](#Android平台)或是执行下列命令。<br>
+**Linux环境相较Termux更为复杂，因此手动操作更加稳妥**<br>
 
 ```sh
 #前往一个您喜欢的目录并执行下列命令
 curl https://kdxhub.github.io/gits/gits.sh
-alias 'gits'="sh $(pwd)/gits.sh"
+echo 'alias gits='"bash $(pwd)"'/gits.sh ;'"$(cat ~/.bashrc)" >~/.bashrc
 ```
 
 
