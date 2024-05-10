@@ -1,5 +1,6 @@
 # gits TODO 列表
 ## 基本仓库管理及远程管理
+git push --set-upstream origin master
 ## 一键pull
 ## 一键push
 ## 一键初始化仓库
